@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/collective2/main/json-schema/collective2-put-autotrade-autotradeid-request-schema.json",
+  "title": "PutAutotradeAutotradeidRequest",
+  "x-generated": "2026-10-09",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/collective2-openapi-generated.yml#/components/schemas/PutAutotradeAutotradeidRequest",
+  "type": "object",
+  "properties": {
+    "Account": {
+      "type": "string",
+      "description": "The Autotrade account"
+    },
+    "PersonId": {
+      "type": "integer",
+      "description": "The C2 PersonID"
+    },
+    "OrderId": {
+      "type": "string",
+      "description": "The OrderID to be replaced"
+    },
+    "Price": {
+      "type": "number",
+      "description": "The new Order price"
+    }
+  }
+}

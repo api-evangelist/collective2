@@ -1,0 +1,22 @@
+{
+  "provider": "collective2",
+  "sources": [
+    "_ae-authored/collective2-openapi-generated.yml"
+  ],
+  "outputs": [
+    "collective2-autotrade-api-openapi.yml",
+    "collective2-general-api-openapi.yml",
+    "collective2-strategies-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "collective2-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+3 apis, 4 total)"
+  ],
+  "skipped": [
+    "collective2.yaml: parse error ScannerError: mapping values are not allowed here"
+  ]
+}

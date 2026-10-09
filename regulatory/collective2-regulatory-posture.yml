@@ -1,0 +1,20 @@
+generated: '2026-10-09'
+method: probed
+source: https://collective2.com/privacy-policy
+signals:
+  data_retention:
+    url: https://collective2.com/privacy-policy
+    note: Retains personal data as needed for business and legal purposes, with varying periods.
+    evidence:
+      - source: https://collective2.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We retain information for as long as reasonably necessary to provide services, maintain accounts, comply with legal and regulatory obligations, resolve disputes, prevent fraud, maintain security, and keep business records. Retention periods vary by record type and legal requirement."
+  global_privacy_control:
+    url: https://collective2.com/privacy-policy
+    note: Provides an opt‑out mechanism for advertising trackers, indicating a GPC‑like control.
+    evidence:
+      - source: https://collective2.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "w.canLoadAdvertisingTrackers = function () { return !(w.C2PrivacyChoices && w.C2PrivacyChoices.optOutActive); }"

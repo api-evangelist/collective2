@@ -1,0 +1,17 @@
+generated: '2026-10-09'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://api-docs.collective2.com/quickstart.md
+sources:
+- https://api-docs.collective2.com/quickstart.md
+- https://api-docs.collective2.com/guides/quickstart.md
+description: Collective2 API uses an API key passed as a Bearer token in the Authorization header.
+schemes:
+- type: apiKey
+  name: Authorization
+  evidence: Your API key is required to authenticate all API requests.
+  location: header
+  header: Authorization
+  how_to_obtain: Create an account, log in, and generate an API key in your dashboard.
+note: No OAuth2 flows, JWT, HMAC, MTLS, or other authentication schemes are documented.
+docs: https://api-docs.collective2.com/quickstart.md

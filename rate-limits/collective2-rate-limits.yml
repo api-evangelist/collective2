@@ -1,0 +1,31 @@
+generated: '2026-10-09'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://api-docs.collective2.com/guides/rate-limits.md
+sources:
+- https://api-docs.collective2.com/guides/rate-limits.md
+name: Collective2 rate limits
+limits:
+- name: default_10_seconds
+  limit_text: Max 100 requests per 10 second per originating IP.
+  max: 100
+  window: 10 second
+  scope: originating IP
+- name: default_hour
+  limit_text: Max 1000 requests per hour per originating IP.
+  max: 1000
+  window: hour
+  scope: originating IP
+- name: default_day
+  limit_text: Max 20,000 requests per day per originating IP.
+  max: 20000
+  window: day
+  scope: originating IP
+headers:
+- X-Limit-Type
+- X-Limit-Limit
+- X-Limit-Remaining
+- X-Limit-Reset
+- X-Limit-Window
+exhaustion_status: 429
+docs: https://api-docs.collective2.com/guides/rate-limits.md

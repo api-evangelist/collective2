@@ -1,0 +1,235 @@
+openapi: 3.2.0
+info:
+  title: Collective2 Autotrade API
+  version: '2026-10-09'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-09: 12 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Collective2 has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 11
+    pages-with-code: 1
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-09'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://api-docs.collective2.com/apis/general/swagger
+  - https://api-docs.collective2.com/apis/general/swagger.md
+servers:
+- url: https://api4-general.collective2.com
+security:
+- Authorization: []
+tags:
+- name: Autotrade
+paths:
+  /Autotrade/{autotradeid}:
+    delete:
+      operationId: delete_Autotrade_autotradeid
+      tags:
+      - Autotrade
+      summary: Cancel an order in the specified account
+      x-source: https://api-docs.collective2.com/apis/general/swagger
+      parameters:
+      - name: autotradeid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Account
+        in: query
+        required: true
+        schema:
+          type: string
+        description: The Autotrade account
+      - name: PersonId
+        in: query
+        required: true
+        schema:
+          type: integer
+        description: The C2 PersonID
+      - name: OrderId
+        in: query
+        required: true
+        schema:
+          type: string
+        description: The OrderID to be cancelled
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteAutotradeAutotradeidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at autotradeId
+    get:
+      operationId: get_Autotrade_autotradeid
+      tags:
+      - Autotrade
+      summary: Request the open positions of the Account
+      x-source: https://api-docs.collective2.com/apis/general/swagger
+      parameters:
+      - name: autotradeid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Account
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Brokerage Account filter
+      - name: StrategyId
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: StrategyId filter
+      - name: PersonId
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAutotradeAutotradeidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 11 example path(s) differing only at autotradeId
+    post:
+      operationId: post_Autotrade_autotradeid
+      tags:
+      - Autotrade
+      summary: Send a new closing order to the specified account
+      x-source: https://api-docs.collective2.com/apis/general/swagger
+      parameters:
+      - name: autotradeid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostAutotradeAutotradeidRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostAutotradeAutotradeidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at autotradeId
+    put:
+      operationId: put_Autotrade_autotradeid
+      tags:
+      - Autotrade
+      summary: Cancel/Replace an open closing order in the specified account
+      x-source: https://api-docs.collective2.com/apis/general/swagger
+      parameters:
+      - name: autotradeid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutAutotradeAutotradeidRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PutAutotradeAutotradeidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at autotradeId
+components:
+  schemas:
+    GetAutotradeAutotradeidResponse:
+      type: object
+      properties:
+        Results:
+          type: array
+          description: Array of objects or null (PositionDTO)
+        ResponseStatus:
+          type: object
+          description: ResponseStatus object (ResponseStatus)
+    PostAutotradeAutotradeidResponse:
+      type: object
+      properties:
+        Results:
+          type: array
+          description: Array of objects or null (SignalIdDTO)
+        ResponseStatus:
+          type: object
+          description: ResponseStatus object (ResponseStatus)
+    PutAutotradeAutotradeidRequest:
+      type: object
+      properties:
+        Account:
+          type: string
+          description: The Autotrade account
+        PersonId:
+          type: integer
+          description: The C2 PersonID
+        OrderId:
+          type: string
+          description: The OrderID to be replaced
+        Price:
+          type: number
+          description: The new Order price
+    PutAutotradeAutotradeidResponse:
+      type: object
+      properties:
+        Results:
+          type: array
+          description: Array of objects or null (SignalIdDTO)
+        ResponseStatus:
+          type: object
+          description: ResponseStatus object (ResponseStatus)
+    PostAutotradeAutotradeidRequest:
+      type: object
+      properties:
+        Account:
+          type: string
+          description: The Autotrade account
+        PersonId:
+          type: integer
+          description: The C2 PersonID
+        Order:
+          type: object
+          description: Order object (OrderDTO)
+      required:
+      - Order
+    DeleteAutotradeAutotradeidResponse:
+      type: object
+      properties:
+        Results:
+          type: array
+          description: Array of objects or null (SignalIdDTO)
+        ResponseStatus:
+          type: object
+          description: ResponseStatus object (ResponseStatus)
+  securitySchemes:
+    Authorization:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://api-docs.collective2.com/quickstart.md

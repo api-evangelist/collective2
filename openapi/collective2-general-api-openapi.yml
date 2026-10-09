@@ -1,0 +1,83 @@
+openapi: 3.2.0
+info:
+  title: Collective2 General API
+  version: '2026-10-09'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-09: 12 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Collective2 has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 11
+    pages-with-code: 1
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-09'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://api-docs.collective2.com/apis/general/swagger
+  - https://api-docs.collective2.com/apis/general/swagger.md
+servers:
+- url: https://api4-general.collective2.com
+security:
+- Authorization: []
+tags:
+- name: General
+paths:
+  /General/UpdateProfile:
+    put:
+      operationId: put_General_UpdateProfile
+      tags:
+      - General
+      summary: Update customer contact information.
+      description: Update customer contact information. A site administrator with write authority may edit a customer belonging to that site without customer participation. Supports FirstName, LastName, Phone, CountryCode, Street, Street2, City, DivisionCode and ZipCode only. General API does not yet implement this endpoint.
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /General/{generalid}:
+    get:
+      operationId: get_General_generalid
+      tags:
+      - General
+      summary: Get the requester's APIKey Role and expiration
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      parameters:
+      - name: generalid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 7 example path(s) differing only at generalId
+    post:
+      operationId: post_General_generalid
+      tags:
+      - General
+      summary: Create a strategy-subscription checkout for the authenticated user.
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      parameters:
+      - name: generalid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at generalId
+components:
+  securitySchemes:
+    Authorization:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://api-docs.collective2.com/quickstart.md

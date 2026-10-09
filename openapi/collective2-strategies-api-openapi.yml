@@ -1,0 +1,118 @@
+openapi: 3.2.0
+info:
+  title: Collective2 Strategies API
+  version: '2026-10-09'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-09: 12 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Collective2 has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 11
+    pages-with-code: 1
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-09'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://api-docs.collective2.com/apis/general/swagger
+  - https://api-docs.collective2.com/apis/general/swagger.md
+servers:
+- url: https://api4-general.collective2.com
+security:
+- Authorization: []
+tags:
+- name: Strategies
+paths:
+  /Strategies/{strategieid}:
+    delete:
+      operationId: delete_Strategies_strategieid
+      tags:
+      - Strategies
+      summary: Cancel a order. Non-paginated endpoint
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      parameters:
+      - name: strategieid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at strategieId
+    get:
+      operationId: get_Strategies_strategieid
+      tags:
+      - Strategies
+      summary: Request a list of statistics available for the nearest date.
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      parameters:
+      - name: strategieid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 15 example path(s) differing only at strategieId
+    post:
+      operationId: post_Strategies_strategieid
+      tags:
+      - Strategies
+      summary: Create a new, empty strategy.
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      parameters:
+      - name: strategieid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 4 example path(s) differing only at strategieId
+    put:
+      operationId: put_Strategies_strategieid
+      tags:
+      - Strategies
+      summary: Send a cancel/replace a order for the strategy. Non-paginated endpoint
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      parameters:
+      - name: strategieid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at strategieId
+  /v2/Strategies/SetDesiredPositions:
+    post:
+      operationId: post_v2_Strategies_SetDesiredPositions
+      tags:
+      - Strategies
+      summary: The list of positions that must exist in the strategy.
+      x-source: https://api-docs.collective2.com/apis/general/swagger.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  securitySchemes:
+    Authorization:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://api-docs.collective2.com/quickstart.md

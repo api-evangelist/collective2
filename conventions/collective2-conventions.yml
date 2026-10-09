@@ -1,0 +1,28 @@
+generated: '2026-10-09'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://api-docs.collective2.com/guides/pagination.md
+sources:
+- https://api-docs.collective2.com/guides/pagination.md
+- https://api-docs.collective2.com/guides/request-headers.md
+- https://api-docs.collective2.com/guides/response-headers.md
+- https://api-docs.collective2.com/quickstart.md
+idempotency:
+  coverage: none
+  evidence: The documentation does not describe any idempotency key or mechanism.
+pagination:
+  style: cursor
+  params:
+  - Cursor
+  - Limit
+  - AscendingOrder
+  response_fields:
+  - Pagination.next_cursor
+  - Pagination.prev_cursor
+  evidence: Cursor‑based pagination with Cursor, Limit, and AscendingOrder parameters; responses include a top‑level Pagination object containing
+    next_cursor and prev_cursor.
+versioning: API version is indicated by the path (v4) and optionally by the X-Version request header.
+error_envelope: ResponseStatus object containing an ErrorCode field (e.g., "200").
+authentication: Bearer token passed in the Authorization header.
+rate_limit_signaling: Headers X-Limit-Type, X-Limit-Limit, X-Limit-Remaining, and optionally X-Limit-Reset convey rate‑limit information.
+docs: https://api-docs.collective2.com/guides/pagination.md

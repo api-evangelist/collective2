@@ -1,0 +1,28 @@
+# Collective2 API Documentation
+
+> Write your own software to control Collective2
+
+## Table of contents
+
+ - [Error Codes](https://api-docs.collective2.com/guides/error-codes.md)
+ - [Zero / Null Values](https://api-docs.collective2.com/guides/null-values.md)
+ - [Rate Limits](https://api-docs.collective2.com/guides/rate-limits.md)
+ - [Gap Fill](https://api-docs.collective2.com/guides/websocket-gap-fill.md)
+ - [Changelog](https://api-docs.collective2.com/changelog.md)
+ - [How to submit signals to C2](https://api-docs.collective2.com/guides/how-to-submit-signals.md)
+ - [Pagination](https://api-docs.collective2.com/guides/pagination.md)
+ - [Request Headers](https://api-docs.collective2.com/guides/request-headers.md)
+ - [Response Headers](https://api-docs.collective2.com/guides/response-headers.md)
+ - [Authorization](https://api-docs.collective2.com/guides/authorization.md)
+ - [API Guides](https://api-docs.collective2.com/guides.md)
+ - [Response Errors](https://api-docs.collective2.com/guides/response-errors.md)
+ - [Connecting](https://api-docs.collective2.com/guides/websocket-connect.md)
+ - [Errors](https://api-docs.collective2.com/guides/websocket-errors.md)
+ - [WebSocket API Overview](https://api-docs.collective2.com/guides/websocket-overview.md)
+ - [Subscribing to Channels](https://api-docs.collective2.com/guides/websocket-subscribe.md)
+ - [Collective2 API Quickstart Guide](https://api-docs.collective2.com/quickstart.md)
+ - [API FAQ](https://api-docs.collective2.com/guides/faq.md)
+ - [Collective2 API Quickstart Guide](https://api-docs.collective2.com/guides/quickstart.md)
+ - [Collective2 General API](https://api-docs.collective2.com/apis/general/swagger.md)
+ - [Collective2 WhiteLabel API](https://api-docs.collective2.com/apis/whitelabel/swagger.md)
+
