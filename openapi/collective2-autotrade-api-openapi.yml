@@ -162,12 +162,26 @@ paths:
         collapsed_from: 3 example path(s) differing only at autotradeId
 components:
   schemas:
-    GetAutotradeAutotradeidResponse:
+    PostAutotradeAutotradeidRequest:
+      type: object
+      properties:
+        Account:
+          type: string
+          description: The Autotrade account
+        PersonId:
+          type: integer
+          description: The C2 PersonID
+        Order:
+          type: object
+          description: Order object (OrderDTO)
+      required:
+      - Order
+    PutAutotradeAutotradeidResponse:
       type: object
       properties:
         Results:
           type: array
-          description: Array of objects or null (PositionDTO)
+          description: Array of objects or null (SignalIdDTO)
         ResponseStatus:
           type: object
           description: ResponseStatus object (ResponseStatus)
@@ -195,7 +209,7 @@ components:
         Price:
           type: number
           description: The new Order price
-    PutAutotradeAutotradeidResponse:
+    DeleteAutotradeAutotradeidResponse:
       type: object
       properties:
         Results:
@@ -204,26 +218,12 @@ components:
         ResponseStatus:
           type: object
           description: ResponseStatus object (ResponseStatus)
-    PostAutotradeAutotradeidRequest:
-      type: object
-      properties:
-        Account:
-          type: string
-          description: The Autotrade account
-        PersonId:
-          type: integer
-          description: The C2 PersonID
-        Order:
-          type: object
-          description: Order object (OrderDTO)
-      required:
-      - Order
-    DeleteAutotradeAutotradeidResponse:
+    GetAutotradeAutotradeidResponse:
       type: object
       properties:
         Results:
           type: array
-          description: Array of objects or null (SignalIdDTO)
+          description: Array of objects or null (PositionDTO)
         ResponseStatus:
           type: object
           description: ResponseStatus object (ResponseStatus)
