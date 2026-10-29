@@ -64,5 +64,134 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Collective2 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/collective2
+Collective2 provides a marketplace for manager‑led trading strategies, allowing investors to follow and automate signals from professional strategy managers directly within their brokerage accounts. The platform offers API4 for developers to integrate strategy management, signal submission, and white‑label solutions, supporting multiple brokers and providing detailed documentation, pricing, and support resources.
+
+**Areas:** Finance · Trading · Marketplace · Investment
+
+## Collective2 on APIs.io
+
+Everything profiled for Collective2 is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/collective2/](https://apis.io/providers/collective2/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Collective2 API](https://apis.io/apis/collective2/collective2-api-2/) — API for integrating strategy management, signal submission, and white‑label solutions.
+- [Collective2 Autotrade API](https://apis.io/apis/collective2/collective2-autotrade-api/) — The Autotrade API from Collective2 — 1 operation(s) for autotrade.
+- [Collective2 General API](https://apis.io/apis/collective2/collective2-general-api/) — The General API from Collective2 — 2 operation(s) for general.
+- [Collective2 Strategies API](https://apis.io/apis/collective2/collective2-strategies-api/) — The Strategies API from Collective2 — 2 operation(s) for strategies.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [DeleteAutotradeAutotradeidResponse](https://apis.io/schemas/collective2/collective2-delete-autotrade-autotradeid-response/)
+- [GetAutotradeAutotradeidResponse](https://apis.io/schemas/collective2/collective2-get-autotrade-autotradeid-response/)
+- [PostAutotradeAutotradeidRequest](https://apis.io/schemas/collective2/collective2-post-autotrade-autotradeid-request/)
+- [PostAutotradeAutotradeidResponse](https://apis.io/schemas/collective2/collective2-post-autotrade-autotradeid-response/)
+- [PutAutotradeAutotradeidRequest](https://apis.io/schemas/collective2/collective2-put-autotrade-autotradeid-request/)
+- [PutAutotradeAutotradeidResponse](https://apis.io/schemas/collective2/collective2-put-autotrade-autotradeid-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Collective2 Context](https://apis.io/jsonld/collective2/collective2-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Collective2 API Rules](https://apis.io/rules/collective2/collective2-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Collective2 Authentication](https://apis.io/security/collective2/collective2-authentication/)
+- [Collective2 Domain Security](https://apis.io/security/collective2/collective2-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Collective2 Plans Pricing](https://apis.io/plans/collective2/collective2-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Collective2 Rate Limits](https://apis.io/rate-limits/collective2/collective2-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://collective2.com)
+- [Documentation](https://trade.collective2.com/c2-api.html)
+- [Getting started](https://trade.collective2.com/pricing.html)
+- [API reference](https://api-docs.collective2.com/apis/general/swagger/general)
+- [Pricing](https://trade.collective2.com/pricing.html)
+- [Sign up](https://collective2.com/securesignup)
+- [Support](https://support.collective2.com/)
+- [Blog](https://trade.collective2.com/blog.html)
+- [Terms of service](https://collective2.com/terms-of-service)
+- [Privacy policy](https://collective2.com/privacy-policy)
+- [GitHub](https://github.com/collective2)
+
+## API Evangelist rating
+
+**Kin Score 40.3** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 60.7 |
+| Contract quality | 23.6 |
+| Contract governance | 22.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 44.7 |
+
+**Agent readiness 28.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 28.7** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/collective2/](https://apis.io/providers/collective2/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Collective2: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/collective2/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
